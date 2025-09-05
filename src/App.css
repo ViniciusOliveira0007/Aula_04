@@ -40,3 +40,33 @@
 .read-the-docs {
   color: #888;
 }
+
+h1 {
+  font-size: 60px;
+  font-family:'Verdana', sans-serif;
+  font-weight: bold;
+  text-decoration: underline
+}
+
+.subtitulo {
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
+}
+
+.botao {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.divisao {
+  margin-bottom: 15px;
+}

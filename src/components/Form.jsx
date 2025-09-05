@@ -9,6 +9,7 @@ function Form(){
         
         console.log(`Parabens ${name}, sua senha é ${password}`)
         console.log("Cadastrou Usuário")
+        alert(`Parabens ${name}, sua senha é ${password}`)
     }
 
 
@@ -19,9 +20,9 @@ function Form(){
 
     return(
         <>
-            <h1>Meu cadastro</h1>
+            <h1 className="subtitulo">Cadastre-se aqui</h1>
             <form onSubmit={cadastrarUsuario}>
-                <div>
+                <div className="divisao">
                 <label htmlFor="nome">Nome:</label>
                     <input type="text"  id='name' placeholder="Digite seu nome..."
                     onChange={(event) => setName(event.target.value)}
@@ -38,7 +39,7 @@ function Form(){
                     />
                 </div>
                     <input type="submit" placeholder="digite sua senha..."
-                    value='Cadastrar'
+                    value='Cadastrar' className="botao"
                     />
 
             </form>

@@ -6,17 +6,10 @@ function App() {
   
   return (
     <div className='App'>
-    <h1>Olá family, tudo queizy!!!</h1>
+    <h1>Seja Bem Vindo</h1>
 
-    <Evento
-    numero='1'
     
-    />
-    <Evento
     
-    numero='2'
-    
-    />
 
     <Form/>
     
