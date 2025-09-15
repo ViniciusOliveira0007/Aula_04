@@ -3,15 +3,20 @@ import {useState} from 'react';
 
 function Condicional(){
 
-
+    const [userEmail, setEmail] = useState();
     const [email, setUserEmail] = useState ();
 
 
     function enviarEmail(event){
         
         event.preventDefault()
+
         setUserEmail(email)
-        alert('Funcionou')
+        alert({UserEmail})
+    }
+
+    function limparEmail (){
+        setUserEmail('')
     }
 
 
@@ -24,6 +29,20 @@ function Condicional(){
                     onChange={()=> setUserEmail(event.target.value)}
                 />
                 <button type="submit" onClick={enviarEmail}>Enviar E-mail</button>
+
+
+                {userEmail && (
+                    <div>
+                        <p></p>
+                        <button onClick={limparEmail}>Apagar E-mail</button>
+                    </div>
+
+                )}
+
+
+
+
+
             </form>
         </div>
     )
