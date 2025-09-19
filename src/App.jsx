@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
     <h1>Seja Bem Vindo</h1>
 
-    <Form/>
+  
     
     <Evento/>
 
