@@ -3,15 +3,16 @@ function Image({ event, imageUrl }) {
         <div className="m-2">
             <button 
                 onClick={event}
+                className="btn"
                 
             >
-                Colocar Imagem
+                 Imagem 1
             </button>
             {imageUrl && (
                 <div className="mt-2">
                     <img 
                         src={imageUrl} 
-                        alt="Imagem adicionada" 
+                        alt="Imagem colocada" 
                        
                     />
                 </div>

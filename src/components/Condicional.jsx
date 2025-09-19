@@ -37,7 +37,7 @@ function Condicional(){
 
     return (
         <div className="p-6 max-w-md mx-auto bg-white rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-4 text-center">Cadastre-se aqui:</h2>
+            <h2 className="sub-titulo">Cadastre-se aqui:</h2>
             
             <div className="space-y-4">
                 <div className="bloco-email">
@@ -46,12 +46,12 @@ function Condicional(){
                         placeholder="Digite seu e-mail..."
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
-                        className="w-full p-2 border border-gray-300 rounded mb-2"
+                        className="label-info"
                     />
                     <button 
                         type="button" 
                         onClick={enviarEmail}
-                        className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+                        className="btn-envio"
                     >
                         Enviar E-mail
                     </button>
@@ -63,12 +63,13 @@ function Condicional(){
                         placeholder="Digite sua senha..."
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
-                        className="w-full p-2 border border-gray-300 rounded mb-2"
+                        className="label-info"
+                        
                     />
                     <button 
                         type="button" 
                         onClick={enviarPassword}
-                        className="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600"
+                        className="btn-envio"
                     >
                         Enviar Senha
                     </button>
@@ -77,7 +78,8 @@ function Condicional(){
                 <button 
                     type="button"
                     onClick={Concluido}
-                    className="w-full bg-purple-500 text-white p-2 rounded hover:bg-purple-600"
+                    className="btn-envio"
+                    
                 >
                     Concluído
                 </button>
@@ -89,7 +91,7 @@ function Condicional(){
                                 <p className="font-semibold">Seu e-mail: {userEmail}</p>
                                 <button 
                                     onClick={limparEmail}
-                                    className="mt-2 bg-red-500 text-white px-4 py-1 rounded hover:bg-red-600"
+                                    className="btn-limpa"
                                 >
                                     Apagar E-mail
                                 </button>
@@ -101,7 +103,7 @@ function Condicional(){
                                 <p className="font-semibold">Sua senha: {userPassword}</p>
                                 <button 
                                     onClick={limparPassword}
-                                    className="mt-2 bg-red-500 text-white px-4 py-1 rounded hover:bg-red-600"
+                                    className="btn-limpa"
                                 >
                                     Apagar Senha
                                 </button>

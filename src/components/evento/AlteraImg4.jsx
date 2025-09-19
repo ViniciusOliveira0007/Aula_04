@@ -1,7 +1,7 @@
 function Image (props){
     return(
        
-            <button onClick={props.event} className="btn">Imagem 2</button>
+            <button onClick={props.event} className="btn">Imagem 5</button>
 
         
     )
